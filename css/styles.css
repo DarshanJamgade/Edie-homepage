@@ -80,7 +80,6 @@ nav .menu.cancel {
 
 nav ul {
     display: none;
-    
 }
 
 nav ul.show {
@@ -89,12 +88,12 @@ nav ul.show {
     padding: 0;
 }
 
-nav ul.show li {
+nav ul li {
     list-style: none;
     text-align: center;
 }
 
-nav ul.show li a{
+nav ul li a{
     text-decoration: none;
     color: var(--gray1);
 
@@ -103,7 +102,8 @@ nav ul.show li a{
     line-height: 36px;
 }
 
-nav ul.show li a:active {
+nav ul li a:active,
+nav ul li a:hover {
     color: var(--gray3);
 }
 
@@ -145,7 +145,7 @@ section.main .image{
 
     min-height: 145px;
 
-    border-radius: 8px;
+    border-radius: 18px;
 
 }
 
@@ -213,6 +213,13 @@ section.main button {
     border-radius: 12px;
 
     cursor: pointer;
+}
+
+section.main button:hover {
+    filter:opacity(.85)
+}
+section.main button:active {
+    filter:opacity(1)
 }
 
 /******************************************************/
@@ -441,6 +448,7 @@ section.team p {
 section.team .team-members{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 section.team .team-members .member {
@@ -463,7 +471,6 @@ section.team .team-members img{
 /********************************************************/
 
 section.edie {
-    margin: 0 -1.25rem;
     margin: 6.25rem -1.25rem;
 }
 
@@ -598,4 +605,374 @@ footer .join button {
     border-radius: 12px;
 
     cursor: pointer;
+}
+
+
+footer .join button:hover {
+    filter:opacity(.85)
+}
+footer .join button:active {
+    filter:opacity(1)
+}
+
+/*********************************************************/
+
+@media (min-width: 768px){
+    body {
+        padding: 0 5rem;
+    }
+
+    nav {
+        padding: 10px 26px;
+    }
+
+    nav .menu {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        margin-left: 2rem;
+    }
+
+    /***********************************************/
+
+    section.main {
+        margin: 8rem 0;
+        margin-bottom: 6rem;
+    }
+
+    section.main span{
+        font-size: 18px;
+        line-height: 27px;
+        color: var(--blue);
+        padding-left: 5rem;
+    }
+    
+    section.main h2{
+        font-size: 48px;
+        line-height: 60px;
+        padding-left: 5rem;
+
+        margin: 0.5rem 0;
+    }
+
+    section.main .image{
+    
+        width: calc(100% + 5rem);
+        transform: translateX(-2.5rem);
+    }
+    
+    
+    section.main p {
+        max-width: 366px;
+        margin: 2.625rem 0;
+
+        font-size: 18px;
+        line-height: 27px;
+        padding-left: 5rem;
+    }
+
+    section.main span.contact{
+        font-size: 14px;
+        line-height: 21px;
+    }
+    
+    section.main .join{
+        max-width: 21rem;
+        margin-left: 5rem;
+    }
+
+    /***********************************************/
+
+    section.services h2{
+        font-size: 36px;
+        line-height: 54px;
+    }
+
+    
+    section.services .card{
+        box-shadow: 0px 0px 5px rgba(70, 17, 17, 0.1);
+    }
+    
+    /**************************************************/
+
+    section.projects h2{
+        font-size: 36px;
+        line-height: 54px;
+    }
+        
+    section.projects .project .project-image{
+        width: 545px;
+        height: 545px;
+        background: var(--gray6);
+
+        border-radius: 24px;
+        margin-bottom: 0.5rem;
+        margin-top: 1.25rem;
+    }
+
+    section.projects span {
+        font-size: 14px;
+    }
+
+    section.projects p {
+        font-size: 24px;
+    }
+
+    section.projects a{
+        font-size: 24px;
+    }
+        
+    section.projects .p1 .project-image{
+        background: url("../images/smarthome.jpg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    section.projects .p2 .project-image{
+        background: url("../images/onboard.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+    }
+
+    section.projects .p3 .project-image{
+        background: url("../images/booking.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+    }
+
+    section.projects .p4 .project-image{
+        background: url("../images/juice-product.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    /**************************************************/
+
+    section.team {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+    }
+
+    section.team div{
+        flex: 1;
+    }
+
+    /****************************************************/
+
+    section.edie {
+        margin: 6.25rem 0;
+    }
+
+    /***************************************************/
+
+    footer {
+        margin: 0 -5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+        
+    footer .join{
+        max-width: 21rem;
+    }
+}
+
+/******************************************************/
+
+@media (min-width: 1024px) {
+    nav {
+        padding: 10px 52px;
+    }
+
+    nav ul li {
+        margin-left: 3rem;
+    }
+
+    section.main span{
+        padding-left: 8rem;
+    }
+
+    
+    section.main h2{
+        padding-left: 8rem;
+    }
+      
+    section.main p {
+        padding-left: 8rem;
+    }
+    section.main .join{
+        margin-left: 8rem;
+    }
+
+    /*******************************************/
+    section.services {
+        margin-bottom: 6rem;
+    }
+
+    section.services .services-card{
+        display: flex;
+        justify-content: center;
+    }
+
+    section.services .services-card .card{
+        width: min(341px, 100%);
+        margin: 0 1rem;
+    }
+
+    /*********************************************/
+    section.projects .proj {
+        width: 100%;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    section.projects .project .project-image{
+        width: 400px;
+        height: 400px;
+        background: var(--gray6);
+    
+        border-radius: 24px;
+        margin-right: 1.25rem;
+        margin-top: 0;
+    }
+
+     
+    section.projects .p1 .project-image{
+        background: url("../images/smarthome.jpg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 8rem;
+    }
+
+    section.projects .p2 .project-image{
+        background: url("../images/onboard.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+    }
+
+    section.projects .p3 .project-image{
+        background: url("../images/booking.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 10rem;
+        
+    }
+
+    section.projects .p4 .project-image{
+        background: url("../images/juice-product.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    /****************************************************/
+    
+    section.team .team-members .member {
+        margin-left: 1rem;
+    }
+
+    section.team .team-members .member1{
+        margin-left: 0;
+    }
+
+    section.team .team-members .member2{
+        margin-right: 2rem;
+    }
+
+    /****************************************************/
+
+    section.edie p {
+        max-width: 937px;
+    }
+
+    /****************************************************/
+
+    footer {
+        background: #100E1D;
+        padding: 2.875rem 6.5rem;
+    }
+}
+
+
+@media (min-width: 1200px){
+    body {
+        padding: 0 10rem;
+    }
+
+    section.main .image{
+    
+        width: calc(100% + 10rem);
+        transform: translateX(-5rem);
+    }
+
+    footer {
+        margin: 0 -10rem;
+        padding: 2.875rem 10rem;
+
+    }
+}
+
+@media (min-width: 1450px){
+    
+    section.projects .project .project-image{
+        width: 545px;
+        height: 545px;
+        background: var(--gray6);
+    
+        border-radius: 24px;
+        margin-right: 1.25rem;
+        margin-top: 0;
+    }
+
+     
+    section.projects .p1 .project-image{
+        background: url("../images/smarthome.jpg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 8rem;
+    }
+
+    section.projects .p2 .project-image{
+        background: url("../images/onboard.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+    }
+
+    section.projects .p3 .project-image{
+        background: url("../images/booking.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 10rem;
+        
+    }
+
+    section.projects .p4 .project-image{
+        background: url("../images/juice-product.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
 }
