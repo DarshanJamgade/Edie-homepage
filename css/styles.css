@@ -22,7 +22,7 @@
 
 body{
     margin: 0;
-    padding: 0 10px;
+    /* padding: 0 10px; */
     font-family: 'Poppins', sans-serif;
     background: #ffffff;
     color: var(--gray1);
@@ -64,8 +64,18 @@ nav .logo a{
     color: inherit;
 }
 
-nav .menu img{
+nav .menu{
     width: 24px;
+    height: 24px;
+
+    background: url("../images/menu_black_24dp.svg");
+}
+
+nav .menu.cancel {
+    width: 24px;
+    height: 24px;
+
+    background: url("../images/clear_black_24dp.svg");
 }
 
 nav ul {
@@ -77,7 +87,6 @@ nav ul.show {
     display: block;
     width: 100%;
     padding: 0;
-
 }
 
 nav ul.show li {
@@ -242,6 +251,10 @@ section.services .card{
 
 }
 
+section.services .fe{
+    box-shadow: 0px 0px 5px rgba(70, 17, 17, 0.1);
+}
+
 section.services .card:hover,
 section.services .card:active {
     box-shadow: 0px 0px 15px rgba(51, 51, 51, 0.1);
@@ -398,3 +411,191 @@ section.projects .p4 .project-image{
     background-repeat: no-repeat;
 }
 
+/*********************************************************/
+
+section.team {
+    display: flex;
+    flex-direction: column;
+    margin: 0 -1.25rem;
+}
+
+section.team span {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--red);
+}
+
+section.team h2 {
+    font-weight: 500;
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+section.team p {
+    font-size: 16px;
+    color: var(--gray2);
+    margin-bottom: 2rem;
+}
+
+section.team .team-members{
+    display: flex;
+    align-items: center;
+}
+
+section.team .team-members .member {
+    margin-left: 0.5rem;
+}
+
+section.team .team-members .member1{
+    margin-left: 0;
+}
+
+section.team .team-members .member2{
+    margin-right: 1rem;
+}
+
+section.team .team-members img{
+    width: 100%;
+    border-radius: 24px;
+}
+
+/********************************************************/
+
+section.edie {
+    margin: 0 -1.25rem;
+    margin: 6.25rem -1.25rem;
+}
+
+section.edie p{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+section.edie .info {
+    display: flex;
+}
+section.edie .info .image {
+    width: 82px;
+    height: 82px;
+    margin-right: 30px;
+}
+
+section.edie .info .image img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+section.edie .info .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.edie .info .about h3{
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0;
+}
+
+section.edie .info .about span {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--gray3);
+}
+
+/*******************************************************/
+
+footer {
+    background: #100E1D;
+    margin: 0 -1.875rem;
+    padding: 2.25rem 2.563rem;
+}
+
+footer .nav ul{
+    padding-left: 0;
+}
+
+footer .nav ul li {
+    list-style: none;
+}
+
+footer .nav ul li a{
+    text-decoration: none;
+    color: white;
+
+    font-size: 18px;
+    line-height: 200%;
+}
+
+footer .nav ul li a:active {
+    color: var(--gray3);
+}
+footer .social {
+    margin-bottom: 4rem;
+}
+
+footer .social .logo a{
+    text-decoration: none;
+    font-family: 'Heebo', sans-serif;
+
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 53px;
+    color: var(--gray6);
+
+    margin-bottom: 0.5em;
+}
+
+footer .social .social-app a {
+    margin-right: 0.625rem;
+}
+
+
+footer .join{
+    max-width: 18rem;
+    height: 2.9rem;
+    background: var(--gray6);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 12px;
+
+}
+
+footer .join input[type="email"]{
+    width: 100%;
+    padding-left: 20px;
+
+    background: none;
+    border: none;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--gray4);
+}
+
+footer .join input[type="email"]:focus {
+    outline: none;
+    color: var(--gray2);
+}
+
+footer .join button {
+    background: none;
+    border: none;
+
+    width: 71px;
+    height: 39px;
+    margin-right: 4px;
+    padding: 0 20px;
+
+    background: var(--blue);
+    color: white;
+    border-radius: 12px;
+
+    cursor: pointer;
+}

@@ -21,15 +21,15 @@
     <div class="logo">
       <a href="#">Edie</a>
     </div>
-    <div class="menu">  
-      <img data-menu="" src="./images/menu_black_24dp.svg" alt="">
+    <div data-menu="" class="menu">  
+      <!-- <img data-menu="" src="./images/menu_black_24dp.svg" alt=""> -->
     </div>
     <ul data-nav-list class="">
       <li><a href="#">Home</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Our Works</a></li>
-      <li><a href="#">Clients</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#service">Services</a></li>
+      <li><a href="#work">Our Works</a></li>
+      <li><a href="#client">Clients</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 <!------------------------------------------------------>
@@ -50,7 +50,7 @@
 
 <!------------------------------------------------------->
 
-<section class="services">
+<section id="service" class="services">
   <h2>We offer high <br>demand services</h2>
   <div class="services-card">
     <div class="ui card">
@@ -81,7 +81,7 @@
 </section>
 
 <!------------------------------------------------------->
-<section class="projects">
+<section id="work" class="projects">
   <h2>Good design means <br> good business</h2>
   <div class="project p1">
     <div class="project-image">
@@ -114,6 +114,77 @@
 
   <a href="#">see more ➞</a>
 </section>
+
+<!----------------------------------------------------->
+<section class="team">
+  <div>
+    <span>Meet the team</span>
+    <h2>We are chilled <br> and a laidback <br> team</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>  
+  </div>
+  <div class="team-members">
+    <div class="member member1">
+      <img src="./images/person3.png" alt="">
+    </div>
+    <div>
+      <div class="member member2">
+        <img src="./images/person1.png" alt="">
+      </div>
+      <div class="member member3">
+        <img src="./images/person2.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-------------------------------------------------------->
+<section class="edie">
+  <p>“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”</p>
+  <div class="info">
+    <div class="image">
+      <img src="./images/person4.png" alt="">
+    </div>
+    <div class="about">
+      <h3>Carlos Tran</h3>
+      <span>The Decorate Gatsby</span>
+    </div>
+  </div>
+</section>
+
+<!--------------------------------------------------------->
+
+<footer>
+  <div class="nav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#service">Services</a></li>
+      <li><a href="#work">Our Works</a></li>
+      <li><a href="#client">Clients</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+  <div class="social">
+    <div class="logo">
+      <a href="#">Edie</a>
+    </div>
+    <div class="social-app">
+      <a class="insta" href="#">
+        <img src="./images/instagram.svg" alt="">
+      </a>
+      <a class="linkedin" href="#">
+        <img src="./images/linkedin.svg" alt="">
+      </a>
+      <a class="twitter" href="#">
+        <img src="./images/twitter.svg" alt="">
+      </a>
+    </div>
+  </div>
+  <div class="join">
+    <input type="email" name="email" id="email" placeholder="Email">
+    <button>Join</button>
+  </div>
+</footer>
+
 
 
 </body>
